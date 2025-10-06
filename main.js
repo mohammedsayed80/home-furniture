@@ -6,3 +6,14 @@ menuToggle.addEventListener("click",()=>{
     nav.classList.toggle("active")
     menuToggle.classList.toggle("active")
 })
+
+
+let theme=document.getElementById("theme-toggle")
+if(localStorage.getItem(("theme")==='dark')){
+    document.body.classList.toggle("dark-mode")
+    theme.textContent="🌙"
+}
+theme.addEventListener('click',()=>{
+    document.body.classList.toggle("dark-mode")
+    document.body.classList.contains("dark-mode")?theme.textContent="🌙":theme.textContent="☀️"
+})
