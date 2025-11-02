@@ -10,6 +10,15 @@ body {
 html {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+  width: 0.7em;
+  background: var(--off-white);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--dark-brown);
+  transition: .2s;
+  cursor: pointer;
+}
 :root {
   --dark-brown: #3a2e1f;
   --off-white: #f9f6f1;
@@ -173,7 +182,6 @@ nav.active {
   color: var(--white);
   position: relative;
   transition: .5s;
-
 }
 .design-txt {
   position: absolute;
